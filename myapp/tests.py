@@ -6,4 +6,4 @@ class SumaTests(TestCase):
         self.assertEqual(sumar(2, 2), 4)
 
     def test_sumar_fallando(self):
-        self.assertEqual(sumar(2, 2), 5)
+        self.assertEqual(sumar(2, 3), 5)
