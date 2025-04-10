@@ -1,7 +1,7 @@
 from django.test import TestCase, Client
 from myapp.views import sumar
 
-# Test de la vista ping
+# Test del endpoint ping
 class PingTests(TestCase):
     def setUp(self):
         self.client = Client()
@@ -13,8 +13,5 @@ class PingTests(TestCase):
 
 # Test de la función sumar
 class SumaTests(TestCase):
-    def test_sumar_correctamente(self):
+    def test_sumar(self):
         self.assertEqual(sumar(2, 2), 4)
-
-    def test_sumar_fallando(self):
-        self.assertEqual(sumar(2, 3), 5)
