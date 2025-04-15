@@ -1,7 +1,8 @@
 from django.http import JsonResponse
 
 def ping(request):
-    return JsonResponse({'ping': 'pong'})
+    #soy yo haciendo un cambio
+    return JsonResponse({'ping': 'tong'})
 
 def sumar(a, b):
     return a + b
